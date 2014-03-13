@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>scala-node-example - Proof of concept to see if scala.js could be leveraged to make a node module</title>
+    <title>scala-node by rockymadden</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,20 +15,22 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>scala-node-example</h1>
-        <p>Proof of concept to see if scala.js could be leveraged to make a node module. It can.</p>
-        <p><a href="http://travis-ci.org/rockymadden/scala-node-example"><img src="https://travis-ci.org/rockymadden/scala-node-example.png?branch=master" alt="Build Status"></a></p>
-        <p class="view"><a href="https://github.com/rockymadden/scala-node-example">View the Project on GitHub <small>rockymadden/scala-node-example</small></a></p>
+        <h1>scala-node</h1>
+        <p>Proof of concept to determine if scala.js could be leveraged to make a node.js module. It can.</p>
+
+        <p class="view"><a href="https://github.com/rockymadden/scala-node">View the Project on GitHub <small>rockymadden/scala-node</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/rockymadden/scala-node-example/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/rockymadden/scala-node-example/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/rockymadden/scala-node-example">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/rockymadden/scala-node/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rockymadden/scala-node/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rockymadden/scala-node">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-<p><strong>With this setup:</strong></p>
+        <p>Proof of concept to determine if <a href="https://github.com/scala-js/scala-js">scala.js</a> could be leveraged to make a <a href="https://github.com/joyent/node">node.js</a> module. It can.</p>
+
+<p><strong>With this structure:</strong></p>
 
 <ul>
 <li>You can use Scala test frameworks (e.g. specs2) to test your Scala codebase prior to JavaScript compilation.</li>
@@ -36,27 +38,33 @@
 </ul><h2>
 <a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>How-to</h2>
 
-<p><strong>Install node dependencies:</strong></p>
+<p><strong>Install node.js dependencies:</strong></p>
 
 <pre><code>npm install
 </code></pre>
 
-<p><strong>Build:</strong> Runs <code>sbt main/packageJS</code> and then performs all grunt default tasks (e.g. compile CoffeeScript).</p>
+<hr><p><strong>Build:</strong></p>
 
 <pre><code>grunt
 </code></pre>
 
-<p><strong>Test:</strong> Runs all build items above, then runs <code>sbt test/test</code>, and finally runs Mocha based tests.</p>
+<p>Runs <code>sbt main/packageJS</code>, then performs all grunt default tasks (e.g. compile CoffeeScript).</p>
+
+<hr><p><strong>Test:</strong></p>
 
 <pre><code>grunt test
 </code></pre>
 
-<p><strong>Publish to NPM:</strong> Runs build items above prior.</p>
+<p>Runs all build items above, runs <code>sbt test/test</code>, and finally runs Mocha based tests.</p>
+
+<hr><p><strong>Publish to NPM:</strong></p>
 
 <pre><code>npm publish
 </code></pre>
 
-<h2>
+<p>Runs build items above prior.</p>
+
+<hr><h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <pre><code>The MIT License (MIT)
@@ -83,30 +91,11 @@ THE SOFTWARE.
 </code></pre>
       </section>
       <footer>
-        <p>This project is maintained by <a href="http://rockymadden.com/">rockymadden</a></p>
+        <p>This project is maintained by <a href="https://github.com/rockymadden">rockymadden</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script type="text/javascript">
-var _gap = _gap || [];
-_gap.push(["_setAccount", "UA-20432336-1"]); // CHANGE.
-_gap.push(["_trackPageview"]);
-_gap.push(["_gapTrackBounceViaTime", 10]);
-_gap.push(["_gapTrackBounceViaScroll", 50]);
-_gap.push(["_gapTrackReads", 20, 30]);
-_gap.push(["_gapTrackLinkClicks"]);
-_gap.push(["_gapTrackMaxScroll", 25]);
-_gapDebug = true;
-
-(function() {
-    var gap = document.createElement("script");
-    gap.async = true;
-    gap.type = "text/javascript";
-    gap.src = "http://rockymadden.com/js/gap.min.js"; // CHANGE.
-
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(gap, s);
-})();
-          </script>
+    
   </body>
 </html>
